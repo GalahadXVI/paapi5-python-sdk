@@ -25,7 +25,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 import os
 
-NAME = "paapi5-python-sdk"
+NAME = "amazon-api-forked"
 VERSION = "1.0.0"
 # To install the library, run the following
 #
@@ -44,11 +44,13 @@ setup(
     version=VERSION,
     description="ProductAdvertisingAPI 5.0 Python SDK",
     author_email="",
-    url="https://github.com/amzn/paapi5-python-sdk",
+    url="https://github.com/LeilaSchooley/paapi5-python-sdk",
     keywords=["ProductAdvertisingAPI", "pa-api", "paapi", "amazon"],
     install_requires=REQUIRES,
     packages=find_packages(),
     license="Apache License 2.0",
     include_package_data=True,
-    long_description=read('README.md'),
+    long_description=open('README.md').read(),
+
+        long_description_content_type='text/markdown',  # Specify Markdown format
 )
