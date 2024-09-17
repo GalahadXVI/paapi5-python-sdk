@@ -1,10 +1,9 @@
-Here’s a simple version of the README for your forked repository:
 
 ---
 
 # Amazon API Forked
 
-This is a fork of the official Amazon Product Advertising API 5.0 Python SDK. The original repository was missing the models library, which is essential for working with the PAAPI effectively. This fork includes the necessary models to enhance functionality.
+This is a fork of the official Product Advertising API 5.0 Python SDK, referred to as **paapi5_python_sdk**. The original repository was missing the models library, which is essential for working with the PAAPI effectively. This fork includes the necessary models to enhance functionality.
 
 ![pypi](https://img.shields.io/pypi/v/amazon-api-forked.svg)
 
@@ -31,7 +30,7 @@ pip install git+https://github.com/LeilaSchooley/amazon-api-forked.git
 Import the package in your Python script:
 
 ```python
-import amazon_api_forked
+import paapi5_python_sdk
 ```
 
 ### Example
@@ -39,7 +38,7 @@ import amazon_api_forked
 Here’s a simple example of how to use the API to search for items:
 
 ```python
-from amazon_api_forked import DefaultApi, SearchItemsRequest, SearchItemsResource, PartnerType
+from paapi5_python_sdk import DefaultApi, SearchItemsRequest, SearchItemsResource, PartnerType
 
 def search_items():
     access_key = "<YOUR ACCESS KEY>"
@@ -72,4 +71,4 @@ This SDK is distributed under the [Apache License, Version 2.0](http://www.apach
 
 ---
 
-Feel free to customize any part of this README to better fit your project's needs!
+ 
