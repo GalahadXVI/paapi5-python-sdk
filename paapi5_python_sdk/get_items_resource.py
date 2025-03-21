@@ -1,19 +1,20 @@
 # coding: utf-8
 
 """
- Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
- Licensed under the Apache License, Version 2.0 (the "License").
- You may not use this file except in compliance with the License.
- A copy of the License is located at
+  Licensed under the Apache License, Version 2.0 (the "License").
+  You may not use this file except in compliance with the License.
+  A copy of the License is located at
 
-     http://www.apache.org/licenses/LICENSE-2.0
+      http://www.apache.org/licenses/LICENSE-2.0
 
- or in the "license" file accompanying this file. This file is distributed
- on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
- express or implied. See the License for the specific language governing
- permissions and limitations under the License.
+  or in the "license" file accompanying this file. This file is distributed
+  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+  express or implied. See the License for the specific language governing
+  permissions and limitations under the License.
 """
+
 
 """
     ProductAdvertisingAPI
@@ -41,6 +42,8 @@ class GetItemsResource(object):
     BROWSENODEINFO_BROWSENODES_ANCESTOR = "BrowseNodeInfo.BrowseNodes.Ancestor"
     BROWSENODEINFO_BROWSENODES_SALESRANK = "BrowseNodeInfo.BrowseNodes.SalesRank"
     BROWSENODEINFO_WEBSITESALESRANK = "BrowseNodeInfo.WebsiteSalesRank"
+    CUSTOMERREVIEWS_COUNT = "CustomerReviews.Count"
+    CUSTOMERREVIEWS_STARRATING = "CustomerReviews.StarRating"
     IMAGES_PRIMARY_SMALL = "Images.Primary.Small"
     IMAGES_PRIMARY_MEDIUM = "Images.Primary.Medium"
     IMAGES_PRIMARY_LARGE = "Images.Primary.Large"
@@ -63,6 +66,7 @@ class GetItemsResource(object):
     OFFERS_LISTINGS_AVAILABILITY_MINORDERQUANTITY = "Offers.Listings.Availability.MinOrderQuantity"
     OFFERS_LISTINGS_AVAILABILITY_TYPE = "Offers.Listings.Availability.Type"
     OFFERS_LISTINGS_CONDITION = "Offers.Listings.Condition"
+    OFFERS_LISTINGS_CONDITION_CONDITIONNOTE = "Offers.Listings.Condition.ConditionNote"
     OFFERS_LISTINGS_CONDITION_SUBCONDITION = "Offers.Listings.Condition.SubCondition"
     OFFERS_LISTINGS_DELIVERYINFO_ISAMAZONFULFILLED = "Offers.Listings.DeliveryInfo.IsAmazonFulfilled"
     OFFERS_LISTINGS_DELIVERYINFO_ISFREESHIPPINGELIGIBLE = "Offers.Listings.DeliveryInfo.IsFreeShippingEligible"
@@ -86,12 +90,21 @@ class GetItemsResource(object):
     RENTALOFFERS_LISTINGS_AVAILABILITY_TYPE = "RentalOffers.Listings.Availability.Type"
     RENTALOFFERS_LISTINGS_BASEPRICE = "RentalOffers.Listings.BasePrice"
     RENTALOFFERS_LISTINGS_CONDITION = "RentalOffers.Listings.Condition"
+    RENTALOFFERS_LISTINGS_CONDITION_CONDITIONNOTE = "RentalOffers.Listings.Condition.ConditionNote"
     RENTALOFFERS_LISTINGS_CONDITION_SUBCONDITION = "RentalOffers.Listings.Condition.SubCondition"
     RENTALOFFERS_LISTINGS_DELIVERYINFO_ISAMAZONFULFILLED = "RentalOffers.Listings.DeliveryInfo.IsAmazonFulfilled"
     RENTALOFFERS_LISTINGS_DELIVERYINFO_ISFREESHIPPINGELIGIBLE = "RentalOffers.Listings.DeliveryInfo.IsFreeShippingEligible"
     RENTALOFFERS_LISTINGS_DELIVERYINFO_ISPRIMEELIGIBLE = "RentalOffers.Listings.DeliveryInfo.IsPrimeEligible"
     RENTALOFFERS_LISTINGS_DELIVERYINFO_SHIPPINGCHARGES = "RentalOffers.Listings.DeliveryInfo.ShippingCharges"
     RENTALOFFERS_LISTINGS_MERCHANTINFO = "RentalOffers.Listings.MerchantInfo"
+    OFFERSV2_LISTINGS_AVAILABILITY = "OffersV2.Listings.Availability"
+    OFFERSV2_LISTINGS_CONDITION = "OffersV2.Listings.Condition"
+    OFFERSV2_LISTINGS_DEALDETAILS = "OffersV2.Listings.DealDetails"
+    OFFERSV2_LISTINGS_ISBUYBOXWINNER = "OffersV2.Listings.IsBuyBoxWinner"
+    OFFERSV2_LISTINGS_LOYALTYPOINTS = "OffersV2.Listings.LoyaltyPoints"
+    OFFERSV2_LISTINGS_MERCHANTINFO = "OffersV2.Listings.MerchantInfo"
+    OFFERSV2_LISTINGS_PRICE = "OffersV2.Listings.Price"
+    OFFERSV2_LISTINGS_TYPE = "OffersV2.Listings.Type"
 
     """
     Attributes:
